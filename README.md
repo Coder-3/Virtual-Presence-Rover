@@ -11,17 +11,28 @@ The Virtual Presence Rover is a device which can be driven over LAN with a web i
 1. Connect all modules as seen in the connection diagrams above.
 2. Run the following in the Terminal:
 	>*sudo apt-get install rpi-update*
+	
 	>*sudo rpi-update*
+	
 	>*sudo apt-get update*
+	
 	>*sudo apt-get install motion*
+	
 	>*sudo nano /etc/default/motion*
+	
 3. Locate the following lines and amend with the below:
 	>*start_motion_daemon=yes*
-	>*widt 600*
+	
+	>*width 600*
+	
 	>*heigh 400*
+	
 	>*framerate 10*
+	
 	>*stream_localhost off*
+	
 	>*webcontrol_localhost off*
+	
 4. Reboot Raspberry Pi
 5. >*ifconfig*
 6. Copy localhost IP
